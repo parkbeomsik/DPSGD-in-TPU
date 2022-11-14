@@ -1,0 +1,17 @@
+export PROJECT_ID=dpsgd-342511
+export ZONE=us-central1-b
+
+
+
+  gcloud alpha compute tpus tpu-vm ssh profiler-tutorial-tpu-vm \
+   --project ${PROJECT_ID} \
+   --zone ${ZONE}
+
+
+gcloud alpha compute tpus tpu-vm scp ./pytorch_gemm_test.py profiler-tutorial-tpu-vm:~/.
+
+
+  gcloud alpha compute tpus tpu-vm ssh profiler-tutorial-tpu-vm \
+   --project ${PROJECT_ID} \
+   --zone ${ZONE} \
+   --ssh-flag="-4 -L 9001:localhost:9001"

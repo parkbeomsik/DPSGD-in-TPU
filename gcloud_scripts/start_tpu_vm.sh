@@ -1,0 +1,1 @@
+gcloud alpha compute tpus tpu-vm start gemm-test --zone=us-central1-b

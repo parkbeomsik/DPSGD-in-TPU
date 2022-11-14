@@ -1,0 +1,1 @@
+gcloud alpha compute tpus tpu-vm scp --recurse gemm-test:~/out .

@@ -1,0 +1,1 @@
+gcloud alpha compute tpus tpu-vm scp gemm-test:~/$1 $1

@@ -1,0 +1,5 @@
+python3 tutorials_new/dpsgd_cnn_batch_sweep.py
+
+python3 tutorials_new/dpsgd_transformer_batch_sweep.py
+
+python3 tutorials_new/dpsgd_lstm_batch_sweep.py
